@@ -1,10 +1,11 @@
 import * as React from "react";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
 import Layout from "../../components/layout";
+import Button from "../../components/Button";
 
 const ImgCaption = styled.p`
   margin-top: 0px;
@@ -18,6 +19,7 @@ const BlogPost = ({ data }) => {
   const image = getImage(data.mdx.frontmatter.hero_image);
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
+      <Button onClick={() => navigate(-1)}>🡐 Go Back</Button>
       <p>
         {data.mdx.frontmatter.date}{" "}
         {showLastUpdated ? `(Updated: ${lastUpdateDate})` : null}

@@ -18,7 +18,6 @@ const NavItems = styled.ul`
   padding-inline-start: 0;
   display: flex;
   justify-content: center;
-  align-c: start;
   gap: 20px;
 `;
 

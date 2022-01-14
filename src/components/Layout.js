@@ -20,6 +20,10 @@ const GlobalStyle = createGlobalStyle`
     a, a:visited {
       color: #333;
     }
+
+    button:disabled {
+      color: #d9d9d9;
+    }
   }
 
   body.dark-mode {
@@ -30,8 +34,11 @@ const GlobalStyle = createGlobalStyle`
       color: #999;
     }
 
+    button:disabled {
+      color: #262626;
+    }
   }
-  
+
   main {
     max-width: 80vw;
     margin: auto;

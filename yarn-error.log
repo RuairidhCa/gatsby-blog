@@ -1,0 +1,59 @@
+Arguments: 
+  C:\Users\rcavaye\.nvm\versions\node\v15.14.0\bin\node.exe C:\Users\rcavaye\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add gatsby-plugin-google-fonts
+
+PATH: 
+  C:\Users\rcavaye\.nvm\versions\node\v15.14.0\bin;C:\Users\rcavaye\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\rcavaye\bin;C:\Program Files (x86)\Microsoft SDKs\Azure\CLI2\wbin;C:\Python310\Scripts;C:\Python310;C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Gradle\gradle-7.2\bin;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\Amazon\AWSSAMCLI\bin;C:\Program Files\Microsoft\Azure Functions Core Tools;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Users\rcavaye\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.3\bin;C:\Users\rcavaye\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\rcavaye\AppData\Roaming\npm;C:\Program Files\heroku\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  15.14.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Users\rcavaye\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141510:19)
+      at Object.onceWrapper (node:events:475:28)
+      at ClientRequest.emit (node:events:369:20)
+      at TLSSocket.emitRequestTimeout (node:_http_client:790:9)
+      at Object.onceWrapper (node:events:475:28)
+      at TLSSocket.emit (node:events:381:22)
+      at TLSSocket.Socket._onTimeout (node:net:481:8)
+      at listOnTimeout (node:internal/timers:557:17)
+      at processTimers (node:internal/timers:500:7)
+
+npm manifest: 
+  {
+    "name": "gatsby-blog",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Gatsby Blog",
+    "author": "Ruairidh Cavaye",
+    "keywords": [
+      "gatsby"
+    ],
+    "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean"
+    },
+    "dependencies": {
+      "babel-plugin-styled-components": "^2.0.2",
+      "gatsby": "^4.5.1",
+      "gatsby-plugin-styled-components": "^5.5.0",
+      "react": "^17.0.1",
+      "react-dom": "^17.0.1",
+      "styled-components": "^5.3.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

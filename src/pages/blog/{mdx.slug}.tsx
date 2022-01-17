@@ -4,7 +4,7 @@ import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
 
-import Layout from "../../components/layout";
+import Layout from "../../components/Layout";
 import Button from "../../components/Button";
 
 const ImgCaption = styled.p`

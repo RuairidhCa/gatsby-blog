@@ -5,11 +5,6 @@ import styled from "styled-components";
 
 import Button from "./Button";
 
-// const Button = styled.button`
-//   all: unset;
-//   cursor: pointer;
-// `;
-
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
@@ -30,7 +25,12 @@ const PaginationNumbers = styled.ul`
   }
 `;
 
-function Pagination({ currentPage, numPages }) {
+interface IPaginationProps {
+  currentPage: number;
+  numPages: number;
+}
+
+function Pagination({ currentPage, numPages }: IPaginationProps) {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
   const prevPage =
@@ -38,7 +38,7 @@ function Pagination({ currentPage, numPages }) {
   const nextPage = "/blog/" + (currentPage + 1).toString();
 
   return (
-    <Wrapper style={{}}>
+    <Wrapper>
       <Button
         disabled={isFirst}
         onClick={() => {

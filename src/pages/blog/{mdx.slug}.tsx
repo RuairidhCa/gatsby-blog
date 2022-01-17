@@ -1,5 +1,5 @@
 import * as React from "react";
-import { graphql, navigate } from "gatsby";
+import { graphql, navigate, PageProps } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import styled from "styled-components";
@@ -11,7 +11,7 @@ const ImgCaption = styled.p`
   margin-top: 0px;
 `;
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data }: PageProps<any>) => {
   const lastUpdateDate = data.mdx.parent.modifiedTime;
 
   const showLastUpdated = lastUpdateDate !== data.mdx.frontmatter.date;

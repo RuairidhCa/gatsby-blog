@@ -1,11 +1,11 @@
 import React from "react";
-import { graphql, Link } from "gatsby";
+import { graphql, Link, PageProps } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import Pagination from "../components/Pagination";
 
-function BlogPage({ data, pageContext }) {
+function BlogPage({ data, pageContext }: PageProps<any, any>) {
   const { currentPage, numPages } = pageContext;
   const pages = data.allMdx.nodes;
   return (

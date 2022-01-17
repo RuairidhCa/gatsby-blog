@@ -61,7 +61,12 @@ const Wrapper = styled.div`
   flex-direction: column;
 `;
 
-const Layout = ({ pageTitle, children }) => {
+interface ILayoutProps {
+  pageTitle?: string;
+  children: React.ReactNode;
+}
+
+const Layout = ({ pageTitle, children }: ILayoutProps) => {
   return (
     <>
       <GlobalStyle />
